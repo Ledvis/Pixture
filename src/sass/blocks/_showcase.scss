@@ -1,0 +1,32 @@
+.showcase {
+  max-width: 1600px;
+  background: url("../img/showcase-bg.jpg") no-repeat left center;
+  background-size: cover;
+
+  &__wrapper {
+    padding: 220px 200px 220px 700px;
+  }
+
+  &__label {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 22px;
+    text-transform: capitalize;
+  }
+
+  &__descr {
+    color: rgb(214, 214, 214);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}

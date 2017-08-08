@@ -1,0 +1,19 @@
+.features {
+  max-width: 1600px;
+
+  &__wrapper {
+    display: flex;
+    padding: 85px 200px;
+  }
+
+  &__item {
+    @include border-box();
+    width: 50%;
+    margin: 0;
+    padding: 0 20px;
+    color: rgb(214, 214, 214);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}

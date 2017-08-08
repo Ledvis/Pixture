@@ -1,0 +1,97 @@
+.gallery {
+  max-width: 1600px;
+  padding-bottom: 40px;
+
+  &__intro {
+    padding-left: 100px;
+    color: rgb(245, 245, 245);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    @include border-box();
+    position: relative;
+    width: 380px;
+    margin-right: 20px;
+    background-color: $white;
+
+    img {
+      width: 380px;
+      height: 205px;
+    }
+  }
+
+  &__item-like {
+    position: absolute;
+    top: 175px;
+    right: 20px;
+    padding-left: 15px;
+    color: $white;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: url("../img/heart.svg") no-repeat left center;
+  }
+
+  &__item-container {
+    position: relative;
+    padding: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -35px;
+      left: 0;
+      border: 30px solid rgb(21, 3, 42);
+      border-right-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+    }
+  }
+
+  &__item-title {
+    margin: 0;
+    color: rgb(12, 37, 57);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+  }
+
+  &__item-descr {
+    margin: 0;
+    color: rgb(103, 114, 120);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__item-footer {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-comments {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    color: rgb(12, 37, 57);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 40px;
+    background: url("../img/comment.svg") no-repeat left 30px center;
+  }
+
+  &__item-ellipsis {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 71px;
+    height: 65px;
+    background-color: rgb(245, 245, 245);
+  }
+}

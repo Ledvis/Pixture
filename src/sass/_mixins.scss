@@ -1,0 +1,30 @@
+@mixin clearfix() {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+@mixin border-box() {
+  box-sizing: border-box;
+}
+@mixin container() {
+  width: auto;
+  margin: 0 auto;
+  @media #{$tablet-width} {
+     @include border-box();
+    width: 768px;
+  }
+  @media #{$desktop-width} {
+    width: 1180px;
+  }
+}
+@mixin container-fluid() {
+  width: auto;
+  @media #{$tablet-width} {
+    width: 74.47%;
+    min-width: 620px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,26 @@
+.advantages {
+  max-width: 1600px;
+
+  &__wrapper {
+    display: flex;
+    padding: 85px 200px;
+  }
+
+  &__item {
+    padding: 0 10px;
+  }
+
+  &__title {
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 54px;
+  }
+
+  &__descr {
+    color: rgb(214, 214, 214);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}

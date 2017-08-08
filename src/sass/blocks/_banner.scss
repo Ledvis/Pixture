@@ -1,0 +1,107 @@
+.banner {
+  max-width: 1600px;
+  background: url("../img/banner-bg-1.jpg") no-repeat left 100px center;
+  background-size: cover;
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    color: $white;
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    padding-left: 80px;
+    color: $white;
+    text-decoration: none;
+    background: url("../img/arrow-down.svg") no-repeat left center;
+    transform-origin: 0 0;
+    transform: rotate(-90deg);
+  }
+
+  &__author {
+    margin-left: 20px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+
+  &__title {
+    width: 529px;
+    height: 204px;
+    margin: 180px auto;
+    background: url("../img/logo.png") no-repeat center;
+  }
+
+  &__caption {
+    position: relative;
+    padding-right: 700px;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+
+    &::before {
+      content: "...";
+      position: absolute;
+      top: 0;
+      left: 400px;
+      font-size: 30px;
+    }
+  }
+
+  &__email {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 24px;
+    height: 17px;
+    background: url("../img/email.svg") no-repeat center;
+  }
+
+  &__descr {
+    margin-bottom: 30px;
+    padding-right: 700px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  &__date {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+
+  &--second {
+    background: url("../img/banner-bg-2.jpg") no-repeat left 100px center;
+
+    .banner__label {
+      position: static;
+      min-width: 100px;
+      margin-right: 20px;
+      padding-left: 0;
+      white-space: nowrap;
+      background: none;
+      transform-origin: 0 0;
+      transform: rotate(0);
+    }
+
+    .banner__rotate {
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      padding-left: 80px;
+      background: url("../img/arrow-down.svg") no-repeat left center;
+      transform-origin: 0 0;
+      transform: rotate(-90deg);
+    }
+
+    .banner__title {
+      width: 589px;
+      height: 207px;
+      background: url("../img/logo-2.png");
+    }
+  }
+}

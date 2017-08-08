@@ -1,0 +1,86 @@
+.page-footer {
+  max-width: 1600px;
+  background-color: rgb(20, 3, 40);
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 70px 200px 130px;
+  }
+
+  &__left {
+    width: 30%;
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    color: rgb(13, 67, 99);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12px;
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__center {
+    width: 30%;
+  }
+
+  &__nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    a {
+      color: $white;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 24px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__right {
+    width: 30%;
+  }
+
+  &__contact {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    margin-top: 40px;
+    color: rgb(92, 91, 97);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+}
